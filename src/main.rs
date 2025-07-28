@@ -1,3 +1,21 @@
-fn main() {
-    println!("Hello, world!");
+mod inventory {
+    const FLOOR_SPACE: i32 = 10000;
+    const MANAGER: &str = "Invan Invetory";
+
+    #[derive(Debug)]
+    enum ProductCategory {
+        Ladder,
+        Hammer,
+    }
+    #[derive(Debug)]
+    Struct Item {
+        name: String,
+        category: ProductCategory,
+        quantity: u32,
+    }
+
+    fn talk_to_manager() {
+        println!("Hey, {MANAGER}, how's your coffee?");
+    }
 }
+fn main() {}
