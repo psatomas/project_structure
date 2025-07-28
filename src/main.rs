@@ -1,6 +1,6 @@
 mod inventory {
     const FLOOR_SPACE: i32 = 10000;
-    const MANAGER: &str = "Invan Invetory";
+    pub const MANAGER: &str = "Invan Invetory";
 
     #[derive(Debug)]
     enum ProductCategory {
@@ -19,4 +19,6 @@ mod inventory {
         println!("Hey, {MANAGER}, how's your coffee?");
     }
 }
-fn main() {}
+fn main() {
+    println!("The manager of our invertory is: {}", inventory::MANAGER);
+}
