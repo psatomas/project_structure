@@ -8,7 +8,8 @@ mod inventory {
         Hammer,
     }
     #[derive(Debug)]
-    Struct Item {
+
+    struct Item {
         name: String,
         category: ProductCategory,
         quantity: u32,
